@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/15ce62e6cf.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+           <nav><h1>Ranmith</h1>
+              
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Developer</p>
+                <h1>Hello, I am <span>Sanura</span></h1>
+            </div>
+        </div>
+        
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                  <img src="img/user.jpg">
+                </div>
+                <div class="about-col-2">
+                  <h1 class="sub-title">About me</h1>
+                  <p>I solve technical problems and build innovative solutions</p>
+                  <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                  </div>
+                  <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>Web Development</span><br>Specialize in HTML, CSS, and JavaScript</li>
+                        <li><span>App Development</span><br>Use Swift, Kotlin and React Native for app development</li>
+                        <li><span>Software Development</span><br>Proficient in Python, Java, and C++</li>
+                    </ul>
+
+                  </div>
+                  <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>2023-current</span><br>Team Lead at WSR</li>
+                        <li><span>2020-2023</span><br>Develop executive at ecom </li>
+                        <li><span>2018-2020</span><br>Internship at TechLabs</li>
+                    </ul>
+
+                  </div>
+                  <div class="tab-contents" id="Education">
+                    <ul>
+                       
+                        <li><span>2023</span><br>MBA from ecommerce </li>
+                        <li><span>2019</span><br>Bsc from IIT</li>
+                    </ul>
+
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Web Develop</h2>
+                    <p>Build responsive and user-friendly websites and create web applications with modern frameworks</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h2>App Develop</h2>
+                    <p>Develop mobile apps for iOS and Android and focus on user experience and performance</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h2>Software Develop</h2>
+                    <p>Design and implement software solutions and develop scalable and maintainable software systems</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="img/work-1.jpg">
+                <div class="layer">
+                    <h3>Football Website</h3>
+                    <p>World & Football</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    
+                </div>
+            </div>
+            <div class="work">
+                <img src="img/work-2.jpg">
+                <div class="layer">
+                    <h3>Food Order App</h3>
+                    <p>Food anywhere</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                
+                </div>
+            </div>
+            <div class="work">
+                <img src="img/work-3.jpg">
+                <div class="layer">
+                    <h3>Defence System Software</h3>
+                    <p>Defence is everything</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                  
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>wsr@ex.com</p>
+            <p><i class="fa-solid fa-phone"></i>0710000000</p>
+            <div class="social-icons">
+                <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/accounts/login/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/home"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          
+        
+            <div class="contact-right">
+             <form>
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+             </form>
+            </div>
+        </div>
+    </div>
+     <div class="copyright">
+     
+        <p>Copyright &copy; Ranmith. All rights reserved</p>
+     
+     </div>
+</div>
+
+
+
+<script>
+
+   var tablinks = document.getElementsByClassName("tab-links");
+   var tabcontents = document.getElementsByClassName("tab-contents");
+
+     function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+     }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px"
+    }
+</script>
+</body>
+</html>
